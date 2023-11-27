@@ -1,13 +1,13 @@
     function addTask() {
-        var taskInput = document.getElementById("taskInput");
-        var taskList = document.getElementById("taskList");
+        let taskInput = document.getElementById("taskInput");
+        let taskList = document.getElementById("taskList");
   
         if (taskInput.value !== "") {
-          var taskItem = document.createElement("li");
+          let taskItem = document.createElement("li");
           taskItem.className = "list-group-item d-flex justify-content-between align-items-center";
           taskItem.innerHTML = taskInput.value;
           
-          var deleteBtn = document.createElement("button");
+          let deleteBtn = document.createElement("button");
           deleteBtn.className = "btn btn-danger btn-sm";
           deleteBtn.innerHTML = "Eliminar";
           deleteBtn.addEventListener("click", function() {
@@ -20,5 +20,5 @@
           taskInput.value = "";
         }
       }
-        var addTaskBtn = document.getElementById("addTaskBtn");
+        let addTaskBtn = document.getElementById("addTaskBtn");
       addTaskBtn.addEventListener("click", addTask);
